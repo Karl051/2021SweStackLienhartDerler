@@ -31,4 +31,4 @@ jobs:
           fail_if_no_tests: true
 
       - name: Build with Maven
-        run: mvn -B package --file stackCalculator/pom.xml
+        run: mvn -B package --file trunk/pom.xml

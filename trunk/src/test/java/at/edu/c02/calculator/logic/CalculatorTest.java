@@ -34,6 +34,20 @@ public class CalculatorTest {
 	}
 
 	@Test
+	public void testSimpleSubOperation() throws Exception {
+
+		Calculator calc = new CalculatorImpl();
+
+		calc.push(10.0);
+		calc.push(5);
+		double result = calc.perform(Operation.sub);
+
+		// verify
+		assertEquals(5, result);
+
+	}
+
+	@Test
 	public void testSimpleMulOperation() throws Exception {
 
 		Calculator calc = new CalculatorImpl();
@@ -85,4 +99,6 @@ public class CalculatorTest {
 		}
 
 	}
+
+	
 }
